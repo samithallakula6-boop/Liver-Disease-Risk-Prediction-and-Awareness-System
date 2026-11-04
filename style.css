@@ -1,0 +1,601 @@
+
+/* =====================================
+   LIVER DISEASE AWARENESS SYSTEM
+   PROFESSIONAL HEALTHCARE THEME
+===================================== */
+
+
+/* Liver Health Analytics Theme */
+
+
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background:
+    linear-gradient(
+        rgba(235, 248, 255, 0.35),
+        rgba(235, 248, 255, 0.35)
+    ),
+    url("/app/static/healthcare_background.png") !important;
+
+background-size: cover !important;
+background-position: center center !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed !important;
+}
+/* Main content width and spacing */
+.block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Main headings */
+h1 {
+    color: #123B5D !important;
+    font-weight: 800 !important;
+}
+
+h2 {
+    color: #164B72 !important;
+    font-weight: 700 !important;
+}
+
+h3 {
+    color: #21618C !important;
+    font-weight: 650 !important;
+}
+
+/* Normal text */
+p, label, span {
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Horizontal dividers */
+hr {
+    border-color: #D6E5F2 !important;
+}
+
+/* Input fields */
+.stNumberInput input,
+.stTextInput input {
+    border-radius: 10px !important;
+    border: 1px solid #C7DCEC !important;
+    background-color: #FFFFFF !important;
+    color: #163B59 !important;
+}
+
+/* Dropdown fields */
+.stSelectbox div[data-baseweb="select"] {
+    border-radius: 10px !important;
+    background-color: #FFFFFF !important;
+}
+
+/* Input focus */
+.stNumberInput input:focus,
+.stTextInput input:focus {
+    border-color: #2586C7 !important;
+    box-shadow: 0 0 0 2px #D7EDFF !important;
+}
+
+/* Labels */
+.stSelectbox label,
+.stNumberInput label {
+    color: #244B68 !important;
+    font-weight: 600 !important;
+}
+
+/* Prediction button */
+.stButton > button {
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        #1769AA,
+        #258FC7
+    );
+    color: white !important;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    font-size: 17px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.stButton > button:hover {
+    background: linear-gradient(
+        90deg,
+        #10558F,
+        #176FA8
+    );
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(22, 105, 170, 0.2);
+}
+
+/* Bordered containers */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #D8E7F3;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(30, 80, 120, 0.05);
+}
+
+/* Alert messages */
+[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid #D8E7F3;
+}
+
+/* Application footer */
+footer {
+    visibility: hidden;
+}
+
+/* Smooth appearance */
+.stMarkdown {
+    color: #334E68;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        font-size: 28px !important;
+    }
+}
+
+
+/* =================================
+   MODERN HEALTHCARE HERO HEADER
+================================= */
+
+.hero-section {
+    background: linear-gradient(
+        120deg,
+        #E0F2FE,
+        #F0F9FF,
+        #FFFFFF
+    );
+
+    padding: 38px 40px;
+    border-radius: 20px;
+    border: 1px solid #D3E8F8;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(30, 90, 140, 0.08);
+}
+
+.hero-tag {
+    display: inline-block;
+    background-color: #D1EAFE;
+    color: #1769AA;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    color: #123B5D;
+    font-size: 38px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.hero-subtitle {
+    color: #1677A8;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    color: #45647D;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+.hero-note {
+    color: #1769AA;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 25px 20px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+/* =================================
+   INPUT SECTION HEADING DESIGN
+================================= */
+
+h3 {
+    color: #164B72 !important;
+    background: linear-gradient(
+        90deg,
+        #E1F1FF,
+        #F4F9FF
+    );
+
+    padding: 15px 20px;
+    border-left: 5px solid #2185C5;
+    border-radius: 10px;
+
+    font-size: 23px !important;
+    font-weight: 700 !important;
+
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+/* Better spacing around input fields */
+[data-testid="stNumberInput"],
+[data-testid="stSelectbox"] {
+    margin-bottom: 12px;
+}
+
+/* =================================
+   PROFESSIONAL INPUT FIELD DESIGN
+================================= */
+
+/* Input field containers */
+[data-testid="stNumberInput"],
+[data-testid="stSelectbox"] {
+    background-color: #FFFFFF;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #DCEAF5;
+    box-shadow: 0 3px 10px rgba(35, 90, 130, 0.05);
+    transition: all 0.25s ease;
+}
+
+/* Input hover effect */
+[data-testid="stNumberInput"]:hover,
+[data-testid="stSelectbox"]:hover {
+    border-color: #65A9D6;
+    box-shadow: 0 4px 12px rgba(35, 110, 170, 0.10);
+}
+
+/* Input labels */
+[data-testid="stNumberInput"] label,
+[data-testid="stSelectbox"] label {
+    color: #164B72 !important;
+    font-weight: 650 !important;
+    font-size: 15px !important;
+}
+
+/* Number input box */
+[data-testid="stNumberInput"] input {
+    background-color: #F7FBFF !important;
+    border-radius: 8px !important;
+    color: #164B72 !important;
+}
+
+/* Select dropdown */
+[data-testid="stSelectbox"] div[data-baseweb="select"] {
+    background-color: #F7FBFF !important;
+    border-radius: 8px !important;
+}
+
+/* Input focus */
+[data-testid="stNumberInput"] input:focus {
+    border-color: #2185C5 !important;
+    box-shadow: 0 0 0 2px #DCEEFF !important;
+}
+
+/* =================================
+   PREDICTION RESULT CARD DESIGN
+================================= */
+
+/* General alert styling */
+[data-testid="stAlert"] {
+    border-radius: 14px !important;
+    padding: 18px 20px !important;
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+    border: 1px solid #D6E8F5 !important;
+
+    box-shadow: 0 4px 14px rgba(30, 90, 140, 0.07);
+}
+
+/* Alert text */
+[data-testid="stAlert"] p {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.6;
+}
+
+/* Success message */
+[data-testid="stAlert"]:has(svg[data-testid="stSuccessIcon"]) {
+    background-color: #E8F8EF !important;
+    border-left: 5px solid #20A464 !important;
+}
+
+/* Error message */
+[data-testid="stAlert"]:has(svg[data-testid="stErrorIcon"]) {
+    background-color: #FFF0F0 !important;
+    border-left: 5px solid #E05252 !important;
+}
+
+/* Information message */
+[data-testid="stAlert"]:has(svg[data-testid="stInfoIcon"]) {
+    background-color: #EAF4FF !important;
+    border-left: 5px solid #2685C5 !important;
+}
+
+/* =================================
+   PERSONALIZED AWARENESS CARDS
+================================= */
+
+/* Awareness message containers */
+[data-testid="stWarning"] {
+    background: #F0F7FF !important;
+    border: 1px solid #D4E8F8 !important;
+    border-left: 5px solid #2685C5 !important;
+    border-radius: 12px !important;
+
+    padding: 17px 20px !important;
+    margin: 12px 0 !important;
+
+    box-shadow: 0 4px 12px rgba(30, 90, 140, 0.06);
+}
+
+/* Awareness text */
+[data-testid="stWarning"] p {
+    color: #245675 !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+}
+
+/* Awareness information box */
+[data-testid="stInfo"] {
+    background: #EAF4FF !important;
+    border: 1px solid #CDE4F8 !important;
+    border-radius: 12px !important;
+    padding: 16px 20px !important;
+}
+
+/* =================================
+   PERSONALIZED AWARENESS CARDS
+   UPDATED DESIGN
+================================= */
+
+[data-testid="stAlert"] {
+    background: #EAF4FF !important;
+    border: 1px solid #C7E2F5 !important;
+    border-left: 5px solid #2185C5 !important;
+    border-radius: 14px !important;
+    padding: 17px 20px !important;
+    box-shadow: 0 4px 14px rgba(30, 90, 140, 0.07);
+}
+
+/* Override Streamlit's inner warning background */
+[data-testid="stAlert"] > div {
+    background: transparent !important;
+}
+
+/* Awareness text */
+[data-testid="stAlert"] p {
+    color: #164B72 !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1.7 !important;
+}
+
+/* Remove yellow background from nested elements */
+[data-testid="stAlert"] [data-testid="stMarkdownContainer"] {
+    background: transparent !important;
+}
+
+/* =================================
+   IMPORTANT DISCLAIMER DESIGN
+================================= */
+
+/* Disclaimer warning container */
+[data-testid="stAlert"]:has(svg[data-testid="stWarningIcon"]) {
+    background: #FFF8E8 !important;
+    border: 1px solid #F3DDAA !important;
+    border-left: 5px solid #E5A52E !important;
+    border-radius: 14px !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 14px rgba(150, 110, 30, 0.06);
+}
+
+/* Disclaimer text */
+[data-testid="stAlert"]:has(svg[data-testid="stWarningIcon"]) p {
+    color: #77551B !important;
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+}
+
+/* Disclaimer information box */
+[data-testid="stAlert"]:has(svg[data-testid="stInfoIcon"]) {
+    background: #EAF4FF !important;
+    border-left: 5px solid #2685C5 !important;
+}
+/* Smooth transitions */
+.stButton button,
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 100, 180, 0.2);
+}
+
+/* Input hover effect */
+input:hover,
+div[data-baseweb="select"]:hover {
+    border-color: #2196f3;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 23px !important;
+    }
+}
+
+
+/* Premium healthcare background */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #eaf3ff 0%,
+        #f5f9ff 50%,
+        #e8f1fc 100%
+    ) !important;
+}
+
+/* Keep main content transparent */
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background: transparent !important;
+}
+
+/* Modern input cards */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 1px solid #d6e5f5 !important;
+    border-radius: 14px !important;
+    padding: 14px !important;
+    box-shadow: 0 4px 12px rgba(30, 80, 130, 0.06);
+    transition: all 0.3s ease;
+}
+
+/* Card hover effect */
+div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    box-shadow: 0 7px 18px rgba(30, 80, 130, 0.12);
+    border-color: #8bbce8 !important;
+}
+
+/* Input fields */
+input {
+    border-radius: 9px !important;
+}
+
+/* Dropdown fields */
+div[data-baseweb="select"] > div {
+    border-radius: 9px !important;
+}
+
+/* Modern prediction button */
+.stButton > button {
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(90deg, #1769aa, #2196d2);
+    color: white !important;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 14px rgba(23, 105, 170, 0.2);
+}
+
+/* Button hover */
+.stButton > button:hover {
+    background: linear-gradient(90deg, #12558d, #167bb5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(23, 105, 170, 0.3);
+}
+
+/* Button click */
+.stButton > button:active {
+    transform: scale(0.98);
+}
+
+/* Success and error result messages */
+div[data-testid="stAlert"] {
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid #d5e5f5;
+    box-shadow: 0 4px 12px rgba(30, 80, 130, 0.06);
+}
+
+/* Result text */
+div[data-testid="stAlert"] p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* Personalized awareness cards */
+[data-testid="stAlert"] {
+    border-radius: 14px !important;
+    padding: 18px 20px !important;
+    margin: 12px 0 !important;
+    box-shadow: 0 4px 12px rgba(30, 80, 130, 0.07);
+}
+
+/* Awareness text */
+[data-testid="stAlert"] p {
+    color: #164B72 !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+}
+
+/* Awareness card appearance */
+[data-testid="stAlert"]:has(svg[data-testid="stWarningIcon"]) {
+    background: #EAF4FF !important;
+    border: 1px solid #C7E2F5 !important;
+    border-left: 5px solid #2185C5 !important;
+}
+/* Final Liver Health Theme Override */
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background: #F0F5F1 !important;
+    background-image: none !important;
+}
+/* Healthcare Background Image */
+
+.stApp {
+    background-image: url("/app/static/healthcare_background.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background: transparent !important;
+}
