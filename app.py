@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 best_rf = joblib.load("liver_disease_model.pkl")
 st.set_page_config(
-    page_title = "Liver Disease Awareness System",
+    page_title = "Liver Disease Risk Prediction and Awareness System",
     page_icon = "🩺",
     layout = "wide",
 )
@@ -14,8 +14,7 @@ with open("style.css") as f:
         unsafe_allow_html=True
     )
 # Application Header
-
-st.title("🩺 Liver Disease Awareness System")
+st.title("Liver Disease Risk Prediction and Awareness System")
 
 st.subheader("Your Liver Health Matters")
 
