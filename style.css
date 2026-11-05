@@ -588,7 +588,7 @@ div[data-testid="stAlert"] p {
 /* Healthcare Background Image */
 
 .stApp {
-   background-image: url("static/healthcare_background.png") !important;
+   background-image: url("https://raw.githubusercontent.com/samithallakula6-boop/Liver-Disease-Awareness-System/main/static/healthcare_background.png") !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
